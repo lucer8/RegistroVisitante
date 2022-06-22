@@ -1,0 +1,20 @@
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class RV_Controller extends CI_Controller {
+    
+    //Constructor
+    public function __construct() {
+        parent::__construct();
+        $this->load->helper('url');
+    }
+    
+    //Funciones
+    public function index() {
+        $this->load->view('welcome_message');
+        
+    }
+
+
+}
